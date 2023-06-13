@@ -234,11 +234,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &423330950 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8621917332758719200, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
-  m_PrefabInstance: {fileID: 8621917332472524820}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482261617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4072342626251463020, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
@@ -345,8 +340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca11472eed83fc24598785e19b1e703c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectA: {fileID: 423330950}
-  objectB: {fileID: 482261617}
 --- !u!1 &1691484568
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +745,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: alternativeActivationTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: alternativeObjectToActivate
+      value: 
+      objectReference: {fileID: 482261617}
     - target: {fileID: 8621917334373148837, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: m_Name
       value: Player
