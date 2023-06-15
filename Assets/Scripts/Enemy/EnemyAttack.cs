@@ -5,8 +5,12 @@ public class EnemyAttack : MonoBehaviour
     public GameObject player;
     public GameObject hitObject;
     public float attackRange = 3f;
+    public float hitDelay = 2f;
+    public float hitDuration = 1f;
 
     private bool isPlayerInRange;
+    private float hitDelayTimer;
+    private float hitDurationTimer;
 
     private void Update()
     {
@@ -23,13 +27,38 @@ public class EnemyAttack : MonoBehaviour
         {
             // El jugador está dentro del rango de ataque
             isPlayerInRange = true;
-            hitObject.SetActive(true);
+
+            if (hitDelayTimer < hitDelay)
+            {
+                // Espera el tiempo de demora antes de activar el objeto "hit"
+                hitDelayTimer += Time.deltaTime;
+            }
+            else
+            {
+                // El tiempo de demora ha transcurrido, activa el objeto "hit" y cuenta la duración
+                hitDurationTimer += Time.deltaTime;
+                hitObject.SetActive(true);
+
+                if (hitDurationTimer >= hitDuration)
+                {
+                    // El tiempo de duración ha transcurrido, desactiva el objeto "hit"
+                    hitObject.SetActive(false);
+
+                    // Reinicia los temporizadores
+                    hitDelayTimer = 0f;
+                    hitDurationTimer = 0f;
+                }
+            }
         }
         else
         {
             // El jugador está fuera del rango de ataque
             isPlayerInRange = false;
             hitObject.SetActive(false);
+
+            // Reinicia los temporizadores
+            hitDelayTimer = 0f;
+            hitDurationTimer = 0f;
         }
     }
 
