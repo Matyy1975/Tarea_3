@@ -3,8 +3,9 @@
     public class ObjectReflection : MonoBehaviour
     {
         public float speed;
-    
-        private void OnCollisionEnter2D(Collision2D collision)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
         {    
             if (collision.gameObject.CompareTag("Projectile"))
             {
@@ -17,6 +18,7 @@
                 // Puedes utilizar rb.velocity = reflectedDirection.normalized * speed; si el objeto tiene un Rigidbody2D y deseas aplicar una velocidad constante
                 // ransform.up = reflectedDirection.normalized;
 
+                // Debug.Log(collision.transform.name, collision.transform);
                 Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
                 rb.velocity = direction.normalized * speed;
             }

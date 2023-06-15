@@ -36,11 +36,21 @@ public class EnemyShooting : MonoBehaviour
         if (Mathf.Approximately(shootingPoint.position.x, player.transform.position.x) &&
             Mathf.Approximately(shootingPoint.position.y, player.transform.position.y))
         {
+            Destroy(gameObject); // Destruir el enemigo si el proyectil y el enemigo tienen la misma posición
             return;
         }
 
         GameObject projectile = Instantiate(projectilePrefab, shootingPoint.position, rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.velocity = direction.normalized * projectileSpeed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Projectile"))
+        {
+            Destroy(gameObject); // Destruir el enemigo si colisiona con un proyectil
+            Destroy(collision.gameObject); // Destruir el proyectil
+        }
     }
 }
