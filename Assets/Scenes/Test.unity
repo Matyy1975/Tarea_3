@@ -1057,6 +1057,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3022166237081792748, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3882353
+      objectReference: {fileID: 0}
     - target: {fileID: 3022166237081792750, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: m_TagString
       value: Hits
@@ -1095,11 +1099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3022166238231199947, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.67
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 3022166238231199947, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6049
+      value: 3.09
       objectReference: {fileID: 0}
     - target: {fileID: 3022166238231199947, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: m_LocalPosition.z

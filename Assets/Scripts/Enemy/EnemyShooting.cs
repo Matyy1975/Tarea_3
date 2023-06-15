@@ -44,7 +44,7 @@ public class EnemyShooting : MonoBehaviour
 
         Vector3 offset = direction.normalized;
 
-        GameObject projectile = Instantiate(projectilePrefab, shootingPoint.position + offset * 2, rotation);
+        GameObject projectile = Instantiate(projectilePrefab, shootingPoint.position + offset * 1, rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.velocity = direction.normalized * projectileSpeed;
     }
