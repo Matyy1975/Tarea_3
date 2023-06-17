@@ -5,9 +5,12 @@ public class EnemyShooting : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform shootingPoint;
     public float projectileSpeed = 10f;
+    public float shootingRange = 5f; // Rango de disparo
+    public float shootingInterval = 2f; // Intervalo entre disparos
 
     private GameObject player;
     private EnemyHealth enemyHealth; // Referencia a EnemyHealth para aplicar el daño
+    private float shootingTimer; // Temporizador para controlar la frecuencia de disparo
 
     private void Start()
     {
@@ -18,19 +21,35 @@ public class EnemyShooting : MonoBehaviour
         {
             Debug.LogError("Player object not found!");
         }
-        else
-        {
-            InvokeRepeating("FireProjectile", 0f, 2f); // Dispara un proyectil cada 2 segundos (puedes ajustar este intervalo)
-        }
+
+        shootingTimer = shootingInterval; // Inicializar el temporizador con el intervalo de disparo
     }
 
-    private void FireProjectile()
+    private void Update()
     {
         if (player == null)
         {
             return;
         }
 
+        // Verificar si el jugador está dentro del rango de disparo
+        float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        if (distanceToPlayer <= shootingRange)
+        {
+            // Actualizar el temporizador
+            shootingTimer -= Time.deltaTime;
+
+            if (shootingTimer <= 0f)
+            {
+                // Disparar proyectil y reiniciar el temporizador
+                FireProjectile();
+                shootingTimer = shootingInterval;
+            }
+        }
+    }
+
+    private void FireProjectile()
+    {
         Vector3 direction = player.transform.position - shootingPoint.position;
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
 
@@ -59,7 +78,6 @@ public class EnemyShooting : MonoBehaviour
                 enemyHealth.TakeDamage(1);
             }
             Destroy(collision.gameObject);
-
         }
     }
 }
