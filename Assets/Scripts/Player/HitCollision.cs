@@ -6,12 +6,12 @@ public class HitCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Melee"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
+            PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
+            if (playerController != null)
             {
-                enemyHealth.TakeDamage(damage);
+                playerController.TakeDamage(damage);
             }
         }
     }
