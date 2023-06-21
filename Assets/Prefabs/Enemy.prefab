@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4354428268208358825}
   - component: {fileID: 4354428268208358824}
   - component: {fileID: 4354428268208358826}
+  - component: {fileID: 172221996}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -149,3 +150,19 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1589992655623731037, guid: 189377fa499f55c449ef543d9e608333, type: 3}
   shootingPoint: {fileID: 4354428268208358831}
   projectileSpeed: 10
+  shootingRange: 9.37
+  shootingInterval: 1
+--- !u!114 &172221996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354428268208358829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7da9f1ec02149849bcb34fa229699c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  healthSlider: {fileID: 0}

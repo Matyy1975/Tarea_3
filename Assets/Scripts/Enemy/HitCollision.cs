@@ -14,5 +14,13 @@ public class HitCollision : MonoBehaviour
                 playerController.TakeDamage(damage);
             }
         }
+        else if (collision.gameObject.CompareTag("Melee"))
+        {
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage);
+            }
+        }
     }
 }

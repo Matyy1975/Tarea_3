@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 3022166237081792751}
   - component: {fileID: 3022166237081792748}
   - component: {fileID: 3022166237081792749}
+  - component: {fileID: 1539076808}
   m_Layer: 0
   m_Name: hit
   m_TagString: Hits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3022166237081792751
 Transform:
   m_ObjectHideFlags: 0
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3022166237081792750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.15, y: 0.31, z: 0}
-  m_LocalScale: {x: 0.8620324, y: 0.36406863, z: 1}
+  m_LocalPosition: {x: -0.7981, y: 0.0277, z: 0}
+  m_LocalScale: {x: 0.5583132, y: 0.31957158, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3022166238231199947}
@@ -101,6 +102,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.50000006
+--- !u!114 &1539076808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022166237081792750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58afbdf2ad926f4db8a6f24c847a792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!1 &3022166238231199798
 GameObject:
   m_ObjectHideFlags: 0
