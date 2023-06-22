@@ -123,24 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &174978089 stripped
+--- !u!1 &311073334 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3022166238231199798, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
-  m_PrefabInstance: {fileID: 3022166236303568714}
+  m_CorrespondingSourceObject: {fileID: 4072342626251463020, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+  m_PrefabInstance: {fileID: 8621917332472524820}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &174978096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174978089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a58afbdf2ad926f4db8a6f24c847a792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 3
 --- !u!1 &337647431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1539076808, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130620297, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2130620297, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: healthSlider
       value: 
@@ -1550,12 +1545,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1088597845, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
-      propertyPath: activationTime
-      value: 0.1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1088597845, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: meleeObject
+      value: 
+      objectReference: {fileID: 311073334}
     - target: {fileID: 8621917334373148837, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: m_Name
       value: Player

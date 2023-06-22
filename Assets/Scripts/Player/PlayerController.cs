@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     private int currentHealth;
     public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
     public int meleeDamage = 1; // Daño del ataque cuerpo a cuerpo
+    public int reflectedDamage = 1; // Daño reflejado al enemigo
     private void Start()
     {
         currentHealth = maxHealth;
@@ -28,8 +29,16 @@ public class PlayerController : MonoBehaviour
             // Reduce la vida del jugador
             TakeDamage(1);
         }
+        if (collision.gameObject.CompareTag("Hits"))
+        {
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(reflectedDamage);
+                Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
+            }
+        }
 
-        
     }
 
     public void TakeDamage(int damage)
