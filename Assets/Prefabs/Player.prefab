@@ -751,7 +751,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 8621917332758719200}
   alternativeObjectToActivate: {fileID: 4072342626251463020}
   activationTime: 0.1
-  alternativeActivationTime: 0.3
+  alternativeActivationTime: 0.1
 --- !u!114 &8621917334373148844
 MonoBehaviour:
   m_ObjectHideFlags: 0

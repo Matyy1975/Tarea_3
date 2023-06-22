@@ -1404,14 +1404,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1539076808, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2130620297, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
-      propertyPath: maxHealth
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2130620297, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: healthSlider
       value: 
@@ -1424,10 +1416,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2062957139}
-    - target: {fileID: 3022166238231199944, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
-      propertyPath: hitDuration
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3022166238231199947, guid: 0b18be1901c029046b2eb546c68f2a6e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1542,14 +1530,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
-      propertyPath: activationTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
-      propertyPath: alternativeActivationTime
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 8621917334373148837, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: m_Name
       value: Player
