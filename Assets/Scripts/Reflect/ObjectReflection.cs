@@ -21,6 +21,10 @@
                 // Debug.Log(collision.transform.name, collision.transform);
                 Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
                 rb.velocity = direction.normalized * speed;
+
+                if(collision.GetComponent<Missile>() != null) { 
+                    collision.GetComponent<Missile>().enabled = false;
+                }
             }
         }
     }
