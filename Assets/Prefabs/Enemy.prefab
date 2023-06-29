@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 4354428268208358824}
   - component: {fileID: 4354428268208358826}
   - component: {fileID: 172221996}
+  - component: {fileID: 1116859693743311801}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -307,7 +308,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 4354428268208358831}
   projectileSpeed: 10
   shootingRange: 25
-  shootingInterval: 1
+  shootingInterval: 3
 --- !u!114 &172221996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,3 +323,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   healthSlider: {fileID: 560451943}
+--- !u!50 &1116859693743311801
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354428268208358829}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

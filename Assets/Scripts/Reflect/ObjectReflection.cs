@@ -21,8 +21,9 @@
                 // Debug.Log(collision.transform.name, collision.transform);
                 Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
                 rb.velocity = direction.normalized * speed;
+                collision.gameObject.transform.localScale = new Vector3(collision.gameObject.transform.localScale.x, collision.gameObject.transform.localScale.y * -1, collision.gameObject.transform.localScale.z);
 
-                if(collision.GetComponent<Missile>() != null) { 
+                if (collision.GetComponent<Missile>() != null) { 
                     collision.GetComponent<Missile>().enabled = false;
                 }
             }
