@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Hits
   - Melee
+  - SecundaryCamera
   layers:
   - Default
   - TransparentFX
