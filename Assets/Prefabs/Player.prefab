@@ -624,7 +624,6 @@ GameObject:
   - component: {fileID: 8621917334373148845}
   - component: {fileID: 1666635405}
   - component: {fileID: 1088597845}
-  - component: {fileID: 2062957149}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -690,7 +689,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.54322654, g: 0.36912602, b: 0.990566, a: 1}
   m_FlipX: 0
@@ -822,17 +821,4 @@ MonoBehaviour:
   meleeObject: {fileID: 4072342626251463020}
   meleeDamage: 1
   reflectedDamage: 1
---- !u!114 &2062957149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8621917334373148837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e45953c4c49664649b9daa2d9dca5aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 313831765}
-  activationDuration: 2
+  cameraController: {fileID: 0}

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
     public int meleeDamage = 1; // Daño del ataque cuerpo a cuerpo
     public int reflectedDamage = 1; // Daño reflejado al enemigo
+    public CameraController cameraController;//Declarando Variable para Tener Referencia al mencionado
     private void Start()
     {
         currentHealth = maxHealth;
@@ -51,4 +52,12 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void Update()
+    {
+        // Leer las entradas del jugador para mover el personaje
+
+        // Luego, llamar al método para mover la cámara junto con el jugador
+        //cameraController.target = transform;
+    }
+
 }
