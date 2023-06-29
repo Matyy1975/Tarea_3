@@ -8,9 +8,13 @@ public class EnemyAttack : MonoBehaviour
     public float hitDelay = 2f;
     public float hitDuration = 1f;
 
-    private bool isPlayerInRange;
     private float hitDelayTimer;
     private float hitDurationTimer;
+
+    private void Start()
+    {
+        player = FindObjectOfType<PlayerMovement>().gameObject;
+    }
 
     private void Update()
     {
@@ -22,11 +26,10 @@ public class EnemyAttack : MonoBehaviour
 
         // Calcula la distancia entre el enemigo y el jugador
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        Debug.Log(distanceToPlayer);
 
         if (distanceToPlayer <= attackRange)
         {
-            // El jugador está dentro del rango de ataque
-            isPlayerInRange = true;
 
             if (hitDelayTimer < hitDelay)
             {
@@ -53,7 +56,6 @@ public class EnemyAttack : MonoBehaviour
         else
         {
             // El jugador está fuera del rango de ataque
-            isPlayerInRange = false;
             hitObject.SetActive(false);
 
             // Reinicia los temporizadores
