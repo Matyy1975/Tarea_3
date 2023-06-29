@@ -31451,8 +31451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 686104086}
   smoothSpeed: 0.3
-  minPos: {x: 0, y: 21.2, z: -10}
-  maxPos: {x: 0, y: 21.2, z: -10}
+  minPos: {x: 0, y: 31, z: -10}
+  maxPos: {x: 0, y: 31, z: -10}
 --- !u!81 &2087583973
 AudioListener:
   m_ObjectHideFlags: 0
