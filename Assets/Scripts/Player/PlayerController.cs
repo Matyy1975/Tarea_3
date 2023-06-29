@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if (currentHealth <= 0)
         {
             // Destruye el jugador cuando su vida llega a 0 o menos
+            BarradeVida.fillAmount = (1.0f * currentHealth) / maxHealth;
             Destroy(gameObject);
         }
     }
