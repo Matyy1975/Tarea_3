@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
     public int meleeDamage = 1; // Daño del ataque cuerpo a cuerpo
     public int reflectedDamage = 1; // Daño reflejado al enemigo
+    public GameObject gameOverObject;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -41,7 +43,14 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
+    public void ActivarGameOver()
+    {
+        // Activar la pantalla de Game Over
+        if (gameOverObject != null)
+        {
+            gameOverObject.SetActive(true);
+        }
+    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -50,6 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             // Destruye el jugador cuando su vida llega a 0 o menos
             BarradeVida.fillAmount = (1.0f * currentHealth) / maxHealth;
+            ActivarGameOver();
             Destroy(gameObject);
         }
     }
