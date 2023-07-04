@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 3022166238231199796}
   - component: {fileID: 3022166238231199944}
   - component: {fileID: 2130620297}
+  - component: {fileID: -3758688507344658692}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: Melee
@@ -460,3 +461,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   healthSlider: {fileID: 1608097390}
+--- !u!114 &-3758688507344658692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022166238231199798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f30d6ecb53bfb47aa736efe744dce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyScore: 200

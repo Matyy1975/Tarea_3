@@ -6,8 +6,14 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    private float score;
+    public static ScoreManager scoreManager;
+    private int score=0;
     private TextMeshProUGUI textMesh;
+
+    public void AddScore(int points)
+    {
+        score += points;
+    }
 
     private void Start()
     {
@@ -19,4 +25,5 @@ public class ScoreManager : MonoBehaviour
     {
         textMesh.text = score.ToString("0");
     }
+
 }
