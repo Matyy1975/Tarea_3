@@ -63,6 +63,15 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
     void Update()
     {
         BarradeVida.fillAmount = (1.0f * currentHealth) / maxHealth;

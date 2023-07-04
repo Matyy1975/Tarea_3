@@ -797,6 +797,7 @@ MonoBehaviour:
   meleeObject: {fileID: 4072342626251463020}
   meleeDamage: 1
   reflectedDamage: 1
+  gameOverObject: {fileID: 0}
 --- !u!58 &686104095
 CircleCollider2D:
   m_ObjectHideFlags: 0
