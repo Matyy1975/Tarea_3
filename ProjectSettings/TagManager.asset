@@ -11,6 +11,9 @@ TagManager:
   - Hits
   - Melee
   - SecundaryCamera
+  - Area Damage
+  - Projectile 2
+  - Projectile 3
   layers:
   - Default
   - TransparentFX

@@ -79,12 +79,12 @@ public class BurstEnemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Projectile"))
+        if (collision.transform.CompareTag("Projectile 3"))
         {
             // Aplicar daño al enemigo
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1); // Llamar al método TakeDamage del script EnemyHealth con el valor de daño deseado
+                enemyHealth.TakeDamage(30); // Llamar al método TakeDamage del script EnemyHealth con el valor de daño deseado
             }
             Destroy(collision.gameObject);
         }

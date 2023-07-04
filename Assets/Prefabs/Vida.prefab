@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 277964881191120851}
   - component: {fileID: 277964881191120684}
   - component: {fileID: 277964881191120685}
+  - component: {fileID: 1623208984}
   m_Layer: 0
   m_Name: Vida
   m_TagString: Untagged
@@ -127,3 +128,16 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
+--- !u!114 &1623208984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277964881191120686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f16c08bad2a20428c687ea2ad1314d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 50

@@ -8,6 +8,8 @@ public class EnemyShooting : MonoBehaviour
     public float shootingRange = 5f; // Rango de disparo
     public float shootingInterval = 2f; // Intervalo entre disparos
 
+    //public int damageReflected = 10; // Daño individual del enemigo
+
     private GameObject player;
     private EnemyHealth enemyHealth; // Referencia a EnemyHealth para aplicar el daño
     private float shootingTimer; // Temporizador para controlar la frecuencia de disparo
@@ -75,7 +77,25 @@ public class EnemyShooting : MonoBehaviour
             // Aplicar daño al enemigo
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1);
+                enemyHealth.TakeDamage(10);
+            }
+            Destroy(collision.gameObject);
+        }
+        else if (collision.transform.CompareTag("Projectile 2"))
+        {
+            // Aplicar daño al enemy 3
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(25);
+            }
+            Destroy(collision.gameObject);
+        }
+        else if (collision.transform.CompareTag("Projectile 3"))
+        {
+            // Aplicar daño al enemy 4
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(30);
             }
             Destroy(collision.gameObject);
         }
