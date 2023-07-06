@@ -14,6 +14,7 @@ TagManager:
   - Area Damage
   - Projectile 2
   - Projectile 3
+  - Win
   layers:
   - Default
   - TransparentFX
