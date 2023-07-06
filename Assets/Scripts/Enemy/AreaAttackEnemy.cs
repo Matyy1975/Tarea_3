@@ -11,7 +11,7 @@ public class AreaAttackEnemy : MonoBehaviour
 
     private bool isAttacking; // Indica si el enemigo está atacando
     private float attackStartTime; // Tiempo de inicio del ataque
-
+    private Vector3 areaDamagePos;
     private void Update()
     {
         // Calcular la dirección hacia el jugador
@@ -25,6 +25,8 @@ public class AreaAttackEnemy : MonoBehaviour
 
             // Invocar objeto de área de ataque
             GameObject areaDamage = Instantiate(areaDamagePrefab, player.position, Quaternion.identity);
+            areaDamagePos = areaDamage.transform.position;
+
             Destroy(areaDamage, areaDamageDuration);
 
             // Realizar disparo al final del tiempo de duración del área de ataque
@@ -41,7 +43,7 @@ public class AreaAttackEnemy : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
 
             // Obtener el punto de disparo del área de daño
-            Vector3 shootingPoint = areaDamagePrefab.transform.position;
+            Vector3 shootingPoint = areaDamagePos;
 
             // Disparar el proyectil desde el punto de disparo hacia la posición del jugador
             GameObject projectile = Instantiate(projectilePrefab, shootingPoint, rotation);
