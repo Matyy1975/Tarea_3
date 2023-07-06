@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4264656968858767803, guid: ebbebbdda37dc044ca701a15ae6624d0, type: 3}
-  areaDamagePrefab: {fileID: 0}
+  areaDamagePrefab: {fileID: 739100833690182383, guid: 90937ce9ca9a7a542b47b712314172b9, type: 3}
   player: {fileID: 0}
-  projectileSpeed: 100
-  projectileLifetime: 0.1
+  projectileSpeed: 5
+  projectileLifetime: 1
   areaDamageDuration: 3
 --- !u!50 &1082964780718300848
 Rigidbody2D:
