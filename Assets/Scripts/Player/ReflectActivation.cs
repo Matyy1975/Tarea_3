@@ -12,6 +12,7 @@ public class ReflectActivation : MonoBehaviour
 
     private void Update()
     {
+        if(Time.deltaTime == 0) return;
         if (Input.GetMouseButtonDown(0) && !isActivated)
         {
             StartCoroutine(ActivateObject());
