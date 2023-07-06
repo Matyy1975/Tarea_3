@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class PlayerController : MonoBehaviour
 {
     public Image BarradeVida;
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
+
     public void MeleeAttack()
     {
         if (meleeObject != null)
@@ -39,7 +41,6 @@ public class PlayerController : MonoBehaviour
 
             // Reduce la vida del jugador
             TakeDamage(25);
-
         }
         if (collision.gameObject.CompareTag("Projectile 3") && collision.gameObject.transform.parent == null)
         {
@@ -48,7 +49,6 @@ public class PlayerController : MonoBehaviour
 
             // Reduce la vida del jugador
             TakeDamage(30);
-
         }
         if (collision.gameObject.CompareTag("Hits"))
         {
@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
                 Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
             }
         }
-
     }
+
     public void ActivarGameOver()
     {
         // Activar la pantalla de Game Over
@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
             gameOverObject.SetActive(true);
         }
     }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -81,6 +82,7 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     public void Heal(int amount)
     {
         currentHealth += amount;
@@ -90,6 +92,12 @@ public class PlayerController : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
+
+    public void IncreaseMaxHP(int increaseAmount)
+    {
+        maxHealth += increaseAmount;
+    }
+
     void Update()
     {
         BarradeVida.fillAmount = (1.0f * currentHealth) / maxHealth;
@@ -98,5 +106,4 @@ public class PlayerController : MonoBehaviour
         // Luego, llamar al método para mover la cámara junto con el jugador
         //cameraController.target = transform;
     }
-
 }
