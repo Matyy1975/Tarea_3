@@ -7,7 +7,7 @@
 
     private void OnTriggerEnter2D(Collider2D collision)
         {
-        if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("Projectile 2" ) || collision.gameObject.CompareTag("Projectile 3"))
+        if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("Projectile 2" ) || collision.gameObject.CompareTag("Projectile 3") || collision.gameObject.CompareTag("Training Projectile"))
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
