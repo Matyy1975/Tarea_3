@@ -16,7 +16,6 @@ TagManager:
   - Projectile 3
   - Win
   - Training Projectile
-  - Absorb
   layers:
   - Default
   - TransparentFX

@@ -50,15 +50,15 @@ public class PlayerController : MonoBehaviour
             // Reduce la vida del jugador
             TakeDamage(30);
         }
-        //if (collision.gameObject.CompareTag("Hits"))
-        //{
-          //  EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-           // if (enemyHealth != null)
-            //{
-             //   enemyHealth.TakeDamage(reflectedDamage);
-             //   Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
-            //}
-        //}
+        if (collision.gameObject.CompareTag("Hits"))
+        {
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(reflectedDamage);
+                Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
+            }
+        }
     }
 
     public void ActivarGameOver()
