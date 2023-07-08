@@ -3,14 +3,15 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private float currentSpeed;
 
     private Rigidbody2D rb;
-
     private Vector2 movement;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentSpeed = moveSpeed;
     }
 
     private void Update()
@@ -21,14 +22,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
+    }
 
-        // Si quieres restringir el movimiento dentro de los límites de la pantalla,
-        // descomenta las siguientes líneas y asegúrate de tener un objeto con un BoxCollider2D
-        // que represente los límites de la pantalla.
+    public void StartSpeedBoost(float boostAmount, float duration)
+    {
+        currentSpeed += boostAmount;
+        StartCoroutine(ResetSpeedBoost(boostAmount, duration));
+    }
 
-        // float clampedX = Mathf.Clamp(rb.position.x, minX, maxX);
-        // float clampedY = Mathf.Clamp(rb.position.y, minY, maxY);
-        // rb.MovePosition(new Vector2(clampedX, clampedY));
+    private System.Collections.IEnumerator ResetSpeedBoost(float boostAmount, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        currentSpeed -= boostAmount;
     }
 }

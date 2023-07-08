@@ -15,7 +15,7 @@ public class ProjectileDeflector : MonoBehaviour
 
             // Incrementar el contador de proyectiles absorbidos
             storedProjectiles++;
-            Debug.Log("Se Guardo"+(storedProjectiles));
+            Debug.Log("Se Guardo "+(storedProjectiles));
 
             // Realizar acciones adicionales al absorber el proyectil
 

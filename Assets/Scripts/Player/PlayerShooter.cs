@@ -27,7 +27,7 @@ public class PlayerShooter : MonoBehaviour
             {
                 ShootProjectile();
                 deflector.storedProjectiles--;
-                Debug.Log("Descontando" + deflector.storedProjectiles);
+                Debug.Log("Descontando " + deflector.storedProjectiles);
             }
         }
     }

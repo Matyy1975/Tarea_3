@@ -713,7 +713,6 @@ GameObject:
   - component: {fileID: 8621917334373148835}
   - component: {fileID: 8621917334373148844}
   - component: {fileID: 1088597845}
-  - component: {fileID: 686104096}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -901,17 +900,3 @@ MonoBehaviour:
   meleeObject: {fileID: 4072342626251463020}
   reflectedDamage: 1
   gameOverObject: {fileID: 0}
---- !u!114 &686104096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8621917334373148837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e61ecf4538995c640a95abf2b4848d42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageColor: {r: 1, g: 0, b: 0, a: 0.8784314}
-  damageDuration: 0.2

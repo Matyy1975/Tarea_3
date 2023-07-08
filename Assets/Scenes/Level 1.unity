@@ -30890,7 +30890,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4354428268208358826, guid: 0eb010bb7ac3d0d4e9bc67e55f78caac, type: 3}
       propertyPath: projectileSpeed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4354428268208358826, guid: 0eb010bb7ac3d0d4e9bc67e55f78caac, type: 3}
       propertyPath: shootingInterval
@@ -36481,6 +36481,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!61 &1332319251
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332319244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1332814635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37358,6 +37384,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!61 &1377954752
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377954745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1383429861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43336,21 +43388,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1797071240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080997790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8f5f62c99d6a0498847b006449d69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deflectionSpeed: 10
-  maxStoredProjectiles: 10
-  storedProjectiles: 0
 --- !u!1001 &1800271603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43505,6 +43542,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!61 &1825979994
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825979987}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1834900339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3526035109306625245, guid: 33f62df5dccc3d04286a217ce02529d7, type: 3}
@@ -45819,6 +45882,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 282322478, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 867290034, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
     - target: {fileID: 1088597845, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: maxHealth
       value: 100
@@ -45831,6 +45902,18 @@ PrefabInstance:
       propertyPath: gameOverObject
       value: 
       objectReference: {fileID: 1785707332}
+    - target: {fileID: 1160822489, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046343054, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624721733597021276, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8621917334373148835, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
       propertyPath: activationTime
       value: 0.1
@@ -45907,14 +45990,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 686104096, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
---- !u!1 &2080997790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4072342626251463020, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
-  m_PrefabInstance: {fileID: 2080997789}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2080997803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46137,6 +46214,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!61 &2122725155
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122725148}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2142297949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4354428268208358829, guid: 0eb010bb7ac3d0d4e9bc67e55f78caac, type: 3}
