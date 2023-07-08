@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8466879397558081391}
   - component: {fileID: -5559040471263998875}
   - component: {fileID: -4906134113454211565}
+  - component: {fileID: 1507389383288108575}
   m_Layer: 0
   m_Name: Training Proyectile
   m_TagString: Training Projectile
@@ -147,5 +148,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a202cda511178fc4981f45a1f5f33972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1507389383288108575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7325849498204887517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b0edc2b6ac5384ea55078b5ee55d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282322479}
   - component: {fileID: 282322480}
+  - component: {fileID: 1825979990}
   m_Layer: 0
   m_Name: One
   m_TagString: Untagged
@@ -84,6 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1825979990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282322478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4740a8877cd5848a428102a8d927f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &313831765
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867290035}
   - component: {fileID: 867290036}
+  - component: {fileID: 1377954748}
   m_Layer: 0
   m_Name: Two
   m_TagString: Untagged
@@ -203,6 +218,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1377954748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867290034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4740a8877cd5848a428102a8d927f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1160822489
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1160822490}
   - component: {fileID: 1160822491}
+  - component: {fileID: 2122725151}
   m_Layer: 0
   m_Name: Four
   m_TagString: Untagged
@@ -287,6 +316,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2122725151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160822489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4740a8877cd5848a428102a8d927f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &2046343054
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2046343055}
   - component: {fileID: 2046343056}
+  - component: {fileID: 1332319247}
   m_Layer: 0
   m_Name: Three
   m_TagString: Untagged
@@ -371,6 +414,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1332319247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046343054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4740a8877cd5848a428102a8d927f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &4072342626251463020
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,8 +439,8 @@ GameObject:
   - component: {fileID: 4538590385919417442}
   - component: {fileID: 5624721733597021276}
   m_Layer: 0
-  m_Name: ReflectMelee
-  m_TagString: Melee
+  m_Name: AbsorbProjectile
+  m_TagString: Absorb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,7 +780,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -815,7 +871,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 8621917332758719200}
   alternativeObjectToActivate: {fileID: 4072342626251463020}
   activationTime: 0.1
-  alternativeActivationTime: 0.1
+  alternativeActivationTime: 0.4
 --- !u!114 &8621917334373148844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,7 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarradeVida: {fileID: 0}
-  maxHealth: 5
+  maxHealth: 100
   meleeObject: {fileID: 4072342626251463020}
   reflectedDamage: 1
   gameOverObject: {fileID: 0}
