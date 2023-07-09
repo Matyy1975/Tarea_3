@@ -106,4 +106,5 @@ public class PlayerController : MonoBehaviour
         // Luego, llamar al método para mover la cámara junto con el jugador
         //cameraController.target = transform;
     }
+
 }
