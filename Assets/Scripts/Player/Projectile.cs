@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+
     private void Start()
     {
         // Obtener todos los colliders del jugador
