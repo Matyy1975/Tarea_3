@@ -1,3 +1,6 @@
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
@@ -100,4 +103,12 @@ public class EnemyShooting : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Handles.color = Color.red;
+        Handles.DrawWireDisc(transform.position, Vector3.forward, shootingRange);
+    }
+#endif
 }

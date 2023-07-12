@@ -390,7 +390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3022166238231199947
 Transform:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ea893773d0fe40aadf15f52830d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8621917334373148837, guid: 27b2192aea2452c4388022939a62ac8c, type: 3}
+  player: {fileID: 0}
   hitObject: {fileID: 3022166237081792750}
   attackRange: 1.46
   hitDelay: 1

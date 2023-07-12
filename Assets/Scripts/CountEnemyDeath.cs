@@ -19,5 +19,13 @@ public class CountEnemyDeath : MonoBehaviour
                 onEnemiesDeath.Invoke();
             }
         }
+        else if (collision.tag == "Melee")
+        {
+            currentDeaths += 1;
+            if (currentDeaths >= maxDeaths)
+            {
+                onEnemiesDeath.Invoke();
+            }
+        }
     }
 }

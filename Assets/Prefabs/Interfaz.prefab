@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.25073242, y: 22.5}
-  m_SizeDelta: {x: 335.5, y: 50}
+  m_AnchoredPosition: {x: 2.9753, y: -0.201}
+  m_SizeDelta: {x: 285.1824, y: 32.5979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &37876931
 CanvasRenderer:
@@ -66,7 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Proyectiles: '
+  m_text: '0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86dc543694a783f448d754ca05290088, type: 2}
   m_sharedMaterial: {fileID: 2862007734649868738, guid: 86dc543694a783f448d754ca05290088, type: 2}
@@ -93,14 +95,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.95
+  m_fontSize: 32.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -279,7 +281,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000000
+  m_text: '0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86dc543694a783f448d754ca05290088, type: 2}
   m_sharedMaterial: {fileID: 2862007734649868738, guid: 86dc543694a783f448d754ca05290088, type: 2}
@@ -306,7 +310,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.9
+  m_fontSize: 46.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -840,7 +844,7 @@ GameObject:
   - component: {fileID: 2908148653067081995}
   - component: {fileID: 5706391674038248133}
   m_Layer: 5
-  m_Name: Image
+  m_Name: "Dise\xF1o Conteo"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
