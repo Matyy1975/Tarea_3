@@ -361,8 +361,8 @@ MonoBehaviour:
   areaDamagePrefab: {fileID: 739100833690182383, guid: 90937ce9ca9a7a542b47b712314172b9, type: 3}
   player: {fileID: 0}
   projectileSpeed: 5
-  projectileLifetime: 1
-  areaDamageDuration: 3
+  projectileLifetime: 0.3
+  areaDamageDuration: 1
 --- !u!50 &1082964780718300848
 Rigidbody2D:
   serializedVersion: 4
@@ -371,7 +371,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082964780718300863}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
