@@ -25,40 +25,42 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Projectile") && collision.gameObject.transform.parent == null)
-        {
-            // Destruye la bala del enemigo
-            Destroy(collision.gameObject);
+        if (collision.otherCollider.CompareTag("Player")) { 
+            if (collision.gameObject.CompareTag("Projectile") && collision.gameObject.transform.parent == null)
+            {
+                // Destruye la bala del enemigo
+                Destroy(collision.gameObject);
 
-            // Reduce la vida del jugador
-            TakeDamage(10);
-        }
-        //PROJECTIL 2 PARRA EL ENEMIGO 3 
-        if (collision.gameObject.CompareTag("Projectile 2") && collision.gameObject.transform.parent == null)
-        {
-            // Destruye la bala del enemigo
-            Destroy(collision.gameObject);
+                // Reduce la vida del jugador
+                TakeDamage(10);
+            }
+            //PROJECTIL 2 PARRA EL ENEMIGO 3 
+            if (collision.gameObject.CompareTag("Projectile 2") && collision.gameObject.transform.parent == null)
+            {
+                // Destruye la bala del enemigo
+                Destroy(collision.gameObject);
 
-            // Reduce la vida del jugador
-            TakeDamage(25);
-        }
-        if (collision.gameObject.CompareTag("Projectile 3") && collision.gameObject.transform.parent == null)
-        {
-            // Destruye la bala del enemigo
-            Destroy(collision.gameObject);
+                // Reduce la vida del jugador
+                TakeDamage(25);
+            }
+            if (collision.gameObject.CompareTag("Projectile 3") && collision.gameObject.transform.parent == null)
+            {
+                // Destruye la bala del enemigo
+                Destroy(collision.gameObject);
 
-            // Reduce la vida del jugador
-            TakeDamage(30);
-        }
-      //  if (collision.gameObject.CompareTag("Hits"))
-        //{
-          //  EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+                // Reduce la vida del jugador
+                TakeDamage(30);
+            }
+            //  if (collision.gameObject.CompareTag("Hits"))
+            //{
+            //  EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
             //if (enemyHealth != null)
             //{
-             //   enemyHealth.TakeDamage(reflectedDamage);
-              //  Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
+            //   enemyHealth.TakeDamage(reflectedDamage);
+            //  Destroy(collision.gameObject); // Destruye el objeto de colisión (ataque del enemigo)
             //}
-        //}
+            //}
+        }
     }
 
     public void ActivarGameOver()

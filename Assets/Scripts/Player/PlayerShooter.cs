@@ -7,11 +7,10 @@ public class PlayerShooter : MonoBehaviour
     public float projectileSpeed = 10f; // Velocidad del proyectil
     public int minStoredProjectiles = 1; // Cantidad mínima de proyectiles absorbidos requeridos para disparar
 
-    private ProjectileDeflector deflector; // Referencia al script ProjectileDeflector
+    public ProjectileDeflector deflector; // Referencia al script ProjectileDeflector
 
     private void Start()
     {
-        deflector = GetComponent<ProjectileDeflector>();
 
         if (deflector == null)
         {
