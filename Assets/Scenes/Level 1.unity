@@ -68754,32 +68754,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3526035109306625240, guid: 33f62df5dccc3d04286a217ce02529d7, type: 3}
   m_PrefabInstance: {fileID: 566016043}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &596031548 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1450143119922621782, guid: 10396d42e44775745b32a724270c1496, type: 3}
-  m_PrefabInstance: {fileID: 3234355202091097205}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &596148606 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3234355203683163998, guid: 10396d42e44775745b32a724270c1496, type: 3}
-  m_PrefabInstance: {fileID: 3234355202091097205}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &596148610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596148606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8f5f62c99d6a0498847b006449d69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deflectionSpeed: 10
-  maxStoredProjectiles: 3
-  storedProjectiles: 0
-  projectilesText: {fileID: 37876930}
 --- !u!4 &598485312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9160747183131969423, guid: 1f8ea29a834d81b4f9fc263ed4d42152, type: 3}
@@ -85822,26 +85796,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3234355204147866543, guid: 10396d42e44775745b32a724270c1496, type: 3}
   m_PrefabInstance: {fileID: 3234355202091097205}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2126051291
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212858552}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 38f7d5c7f9a2dfc42983f984ec2f327d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &2136266615 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3115484406621492152, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
@@ -86079,30 +86033,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1450143119922621782, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355202263866224, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355202263866225, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355202621641465, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355202621641467, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355202633009543, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 596148610, guid: 10396d42e44775745b32a724270c1496, type: 3}
+      propertyPath: projectilesText
+      value: 
+      objectReference: {fileID: 37876930}
     - target: {fileID: 3234355204147866528, guid: 10396d42e44775745b32a724270c1496, type: 3}
       propertyPath: BarradeVida
       value: 
@@ -86111,41 +86045,9 @@ PrefabInstance:
       propertyPath: gameOverObject
       value: 
       objectReference: {fileID: 1785707332}
-    - target: {fileID: 3234355204147866529, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: deflector
-      value: 
-      objectReference: {fileID: 596148610}
-    - target: {fileID: 3234355204147866531, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: rotationPoint
-      value: 
-      objectReference: {fileID: 596031548}
-    - target: {fileID: 3234355204147866534, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: projectilesText
-      value: 
-      objectReference: {fileID: 37876930}
     - target: {fileID: 3234355204147866535, guid: 10396d42e44775745b32a724270c1496, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355204147866536, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355204147866540, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 593642695, guid: cc40d4cef19d54042ac945d665d34a11, type: 3}
-    - target: {fileID: 3234355204147866540, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355204147866540, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3234355204147866540, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3234355204147866543, guid: 10396d42e44775745b32a724270c1496, type: 3}
       propertyPath: m_RootOrder
@@ -86191,8 +86093,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3234355204147866534, guid: 10396d42e44775745b32a724270c1496, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10396d42e44775745b32a724270c1496, type: 3}
 --- !u!1001 &5154252729428614685
 PrefabInstance:
