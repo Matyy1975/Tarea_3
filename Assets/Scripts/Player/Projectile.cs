@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float damage = 10f;
+
     private void Start()
     {
         // Obtener todos los colliders del jugador
@@ -14,7 +15,8 @@ public class Projectile : MonoBehaviour
             Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Melee") || collision.gameObject.CompareTag("Enemy"))
         {
@@ -29,5 +31,6 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     // Resto del código del proyectil...
 }
