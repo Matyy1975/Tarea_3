@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48435435}
   - component: {fileID: 48435436}
+  - component: {fileID: 1878420535}
   m_Layer: 0
   m_Name: Point TP
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48435434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -82.2331, y: 0.266899, z: 0}
+  m_LocalPosition: {x: -35.020363, y: -0.48764247, z: 0}
   m_LocalScale: {x: 0.5337, y: 0.5337, z: 0.5337}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.08627451}
+  m_Sprite: {fileID: 76569429, guid: 993810588552d2e438e5e2cccccba7a2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,6 +85,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1878420535
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48435434}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: c186a8045aa41254ba52ab44fad514aa, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5804607479239186866
 GameObject:
   m_ObjectHideFlags: 0
