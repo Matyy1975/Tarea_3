@@ -33336,45 +33336,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 656773453}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1994397488}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenuButtons, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Transition, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 568610321, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: MenuPrincipal
-      objectReference: {fileID: 0}
     - target: {fileID: 3396084949169471552, guid: 05b7373e3d3bb894685b3282e83e9abf, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -46280,10 +46244,6 @@ PrefabInstance:
     - target: {fileID: 7407185599751104736, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
       propertyPath: m_Name
       value: Canvas_GameOver
-      objectReference: {fileID: 0}
-    - target: {fileID: 7407185599751104736, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7407185599751104748, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
       propertyPath: m_Pivot.x
