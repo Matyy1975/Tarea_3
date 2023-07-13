@@ -285,8 +285,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1589992655623731037, guid: 189377fa499f55c449ef543d9e608333, type: 3}
   shootingPoint: {fileID: 4354428268208358831}
   projectileSpeed: 5
-  shootingRange: 25
-  shootingInterval: 3
+  shootingRange: 15
+  shootingInterval: 1
 --- !u!114 &172221996
 MonoBehaviour:
   m_ObjectHideFlags: 0

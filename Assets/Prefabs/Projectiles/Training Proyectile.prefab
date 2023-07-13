@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5559040471263998875}
   - component: {fileID: -4906134113454211565}
   - component: {fileID: 1507389383288108575}
+  - component: {fileID: 1788813968}
   m_Layer: 0
   m_Name: Training Proyectile
   m_TagString: Training Projectile
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 1953231168, guid: 867a47a73e5b34142b8ff59517544cac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -162,3 +163,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b0edc2b6ac5384ea55078b5ee55d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 15
+--- !u!95 &1788813968
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7325849498204887517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16ca3b411a610be429e6cd2bee24a1c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

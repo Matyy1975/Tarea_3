@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48435434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7669, y: 0.016899943, z: 0}
+  m_LocalPosition: {x: -82.2331, y: 0.266899, z: 0}
   m_LocalScale: {x: 0.5337, y: 0.5337, z: 0.5337}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 5804607479239186869}
   - component: {fileID: 5804607479239186868}
   - component: {fileID: 5804607479239186867}
-  - component: {fileID: 5804607479239186870}
+  - component: {fileID: 1951046454}
+  - component: {fileID: 9160531683832567741}
   m_Layer: 0
   m_Name: Teleport
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Transform:
   m_GameObject: {fileID: 5804607479239186866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13, y: 4.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3192894, y: 2.3192894, z: 2.3192894}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 48435435}
@@ -160,8 +161,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Sprite: {fileID: 521106370, guid: c69311aeeef465a419f92d601c715485, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -184,8 +185,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportTarget: {fileID: 48435435}
---- !u!61 &5804607479239186870
-BoxCollider2D:
+--- !u!95 &1951046454
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5804607479239186866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e710f5cb9aa570479a00aa45f020958, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!60 &9160531683832567741
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -207,6 +228,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.03125, y: 0.34375}
+      - {x: -0.25, y: 0.34375}
+      - {x: -0.40625, y: 0.125}
+      - {x: -0.40625, y: -0.5}
+      - {x: 0.1875, y: -0.5}
+      - {x: 0.1875, y: 0.1875}
