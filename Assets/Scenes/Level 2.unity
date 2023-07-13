@@ -7101,13 +7101,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7407185598522074635, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7407185599751104736, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
       propertyPath: m_Name
       value: Canvas_GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 7407185599751104736, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7407185599751104748, guid: de0c8ed19fa59fd4c808febe128d27fe, type: 3}
       propertyPath: m_Pivot.x
