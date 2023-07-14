@@ -10,7 +10,7 @@ public class ProjectileDeflector : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Projectile"))
+        if (collision.gameObject.CompareTag("Projectile")|| collision.gameObject.CompareTag("Projectile 2")|| collision.gameObject.CompareTag("Projectile 3")|| collision.gameObject.CompareTag("Area Damage"))
         {
             // Absorber el proyectil
             Destroy(collision.gameObject);
