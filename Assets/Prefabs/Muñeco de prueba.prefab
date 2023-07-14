@@ -121,7 +121,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9160747183131969520}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5a9045d975ef042ae2dcce97b04c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 7325849498204887517, guid: e6db51babf3fb03499f322c53346b8c7, type: 3}
+  projectilePrefab: {fileID: 6658294455370417558, guid: afcbdd367b217b34fb1aa117eb4d0c96, type: 3}
   shootingPoint: {fileID: 9160747183131969423}
-  projectileSpeed: 10
-  shootingInterval: 5
+  projectileSpeed: 15
+  shootingInterval: 3
