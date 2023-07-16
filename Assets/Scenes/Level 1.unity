@@ -85917,10 +85917,6 @@ PrefabInstance:
       propertyPath: projectilesText
       value: 
       objectReference: {fileID: 37876930}
-    - target: {fileID: 3234355202621641471, guid: 10396d42e44775745b32a724270c1496, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3234355204147866528, guid: 10396d42e44775745b32a724270c1496, type: 3}
       propertyPath: BarradeVida
       value: 
@@ -86973,6 +86969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 813957125}
     m_Modifications:
+    - target: {fileID: 9160747183131969419, guid: 1f8ea29a834d81b4f9fc263ed4d42152, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 7325849498204887517, guid: e6db51babf3fb03499f322c53346b8c7, type: 3}
     - target: {fileID: 9160747183131969423, guid: 1f8ea29a834d81b4f9fc263ed4d42152, type: 3}
       propertyPath: m_RootOrder
       value: 0

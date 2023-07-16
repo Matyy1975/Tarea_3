@@ -13,6 +13,7 @@ public class BurstEnemy : MonoBehaviour
     private GameObject player; // Referencia al jugador
     private float nextBurstTime; // Tiempo para la próxima ráfaga
     private EnemyHealth enemyHealth; // Referencia al script EnemyHealth
+    public bool isShooting = false; // Indica si el enemigo está disparando
 
     private void Start()
     {
@@ -63,6 +64,8 @@ public class BurstEnemy : MonoBehaviour
 
     private IEnumerator PerformBurst(Vector3 direction, Quaternion rotation)
     {
+        isShooting = true; // Marcar que el enemigo está disparando
+
         for (int i = 0; i < burstCount; i++)
         {
             // Desplazar el punto de disparo hacia afuera del objeto
@@ -75,6 +78,8 @@ public class BurstEnemy : MonoBehaviour
 
             yield return new WaitForSeconds(0.1f); // Esperar un breve intervalo entre cada proyectil de la ráfaga
         }
+
+        isShooting = false; // Marcar que el enemigo ha dejado de disparar
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
