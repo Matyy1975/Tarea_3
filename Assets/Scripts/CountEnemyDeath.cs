@@ -11,7 +11,7 @@ public class CountEnemyDeath : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && !collision.GetComponent<BurstEnemy>().isShooting)
+        if (collision.CompareTag("Enemy"))
         {
             currentDeaths += 1;
             if (currentDeaths >= maxDeaths)
@@ -19,7 +19,7 @@ public class CountEnemyDeath : MonoBehaviour
                 onEnemiesDeath.Invoke();
             }
         }
-        else if (collision.CompareTag("Melee") && !collision.GetComponent<BurstEnemy>().isShooting)
+        else if (collision.CompareTag("Melee"))
         {
             currentDeaths += 1;
             if (currentDeaths >= maxDeaths)

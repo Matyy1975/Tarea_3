@@ -60,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &337647433
 MonoBehaviour:
@@ -272,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3022166237081792751
 Transform:
   m_ObjectHideFlags: 0
@@ -281,8 +281,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3022166237081792750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7981, y: 0.0277, z: 0}
-  m_LocalScale: {x: 0.5583132, y: 0.31957158, z: 1}
+  m_LocalPosition: {x: -0.00000022351742, y: -0.02399987, z: 0}
+  m_LocalScale: {x: 5.378037, y: 3.0786774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3022166238231199947}
@@ -330,7 +330,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9811321, g: 0.72689867, b: 0.45724455, a: 0.28235295}
+  m_Color: {r: 0.98039216, g: 0.45882353, b: 0.6455174, a: 0.19607843}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -390,7 +390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3022166238231199947
 Transform:
   m_ObjectHideFlags: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
   hitObject: {fileID: 3022166237081792750}
   attackRange: 1.46
   hitDelay: 1
-  hitDuration: 0.2
+  hitDuration: 5
 --- !u!114 &2130620297
 MonoBehaviour:
   m_ObjectHideFlags: 0

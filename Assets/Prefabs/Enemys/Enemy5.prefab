@@ -212,7 +212,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1933824153
 MonoBehaviour:
@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1082964780718300850
 Transform:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
   player: {fileID: 0}
   projectileSpeed: 5
   projectileLifetime: 0.3
-  areaDamageDuration: 1
+  areaDamageDuration: 3
 --- !u!50 &1082964780718300848
 Rigidbody2D:
   serializedVersion: 4
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da9f1ec02149849bcb34fa229699c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
+  maxHealth: 30
   healthSlider: {fileID: 12317900}
 --- !u!61 &713694881
 BoxCollider2D:
