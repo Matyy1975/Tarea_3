@@ -9,10 +9,13 @@ public class PlayerController : MonoBehaviour
     public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
     public int reflectedDamage = 0; // Daño reflejado al enemigo
     public GameObject gameOverObject;
+    private ScoreManager scoreManager;
 
+    public GameObject scoreManagerObject;
     private void Start()
     {
         currentHealth = maxHealth;
+        scoreManager = scoreManagerObject.GetComponent<ScoreManager>();
     }
 
     public void MeleeAttack()
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
             BarradeVida.fillAmount = (1.0f * currentHealth) / maxHealth;
             ActivarGameOver();
             Destroy(gameObject);
+            scoreManager.ResetScore();
         }
     }
 

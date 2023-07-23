@@ -30,4 +30,13 @@ public class ScoreManager : MonoBehaviour
     {
         textMesh.text = score.ToString("0");
     }
+    public void ResetScore()
+    {
+        score = 0;
+        // Guarda el puntaje reiniciado
+        PlayerPrefs.SetInt("Puntaje", score);
+        PlayerPrefs.Save();
+
+        UpdateScoreText();
+    }
 }

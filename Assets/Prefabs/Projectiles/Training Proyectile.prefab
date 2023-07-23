@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -4906134113454211565}
   - component: {fileID: 1507389383288108575}
   - component: {fileID: 1788813968}
+  - component: {fileID: -3738740685600481209}
   m_Layer: 0
   m_Name: Training Proyectile
   m_TagString: Training Projectile
@@ -184,3 +185,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-3738740685600481209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7325849498204887517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1999c35a1cd399b45be725b539886f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 5274666462097100995, guid: 22212fa56c80ab04d927e72bcebdb342, type: 3}

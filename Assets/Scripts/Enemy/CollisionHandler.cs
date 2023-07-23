@@ -21,5 +21,10 @@ public class CollisionHandler : MonoBehaviour
             // Activar el parámetro "Inj Slime" como un Trigger en el Animator
             animator.SetTrigger(parameterName);
         }
+        if (collision.collider.CompareTag("Projectile 3"))
+        {
+            // Set the "Injunemy" trigger to true, activating the animation state
+            animator.SetTrigger("Inju4");
+        }
     }
 }
