@@ -11,10 +11,13 @@ public class PlayerShooter : MonoBehaviour
 
     private void Start()
     {
-
         if (deflector == null)
         {
-            Debug.LogError("ProjectileDeflector script not found on the player!");
+            deflector = FindObjectOfType<ProjectileDeflector>(); // Encuentra automáticamente el objeto con el script ProjectileDeflector si no se ha asignado manualmente.
+            if (deflector == null)
+            {
+                Debug.LogError("ProjectileDeflector script not found on the player!");
+            }
         }
     }
 
@@ -27,6 +30,7 @@ public class PlayerShooter : MonoBehaviour
                 ShootProjectile();
                 deflector.storedProjectiles--;
                 Debug.Log("Descontando " + deflector.storedProjectiles);
+                deflector.projectilesText.text = "" + deflector.storedProjectiles.ToString();
             }
         }
     }

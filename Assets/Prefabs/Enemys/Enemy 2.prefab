@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.2313466, y: 0.8717706}
+  m_AnchoredPosition: {x: -0.2313466, y: 1.01}
   m_SizeDelta: {x: 1101, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &337647434
@@ -385,6 +385,8 @@ GameObject:
   - component: {fileID: -3758688507344658692}
   - component: {fileID: 607527860}
   - component: {fileID: 607527859}
+  - component: {fileID: 1829660477}
+  - component: {fileID: 696428449965541501}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: Melee
@@ -572,3 +574,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1829660477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022166238231199798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684b99cd43d3012449cfcf5f9f5b77ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileTag: Training Projectile
+  parameterName: Inj Slime
+--- !u!114 &696428449965541501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022166238231199798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071ea114cee812f4c83878b578a5d106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  followSpeed: 0.5

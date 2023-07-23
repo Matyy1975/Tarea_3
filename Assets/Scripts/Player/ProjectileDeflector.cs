@@ -14,7 +14,7 @@ public class ProjectileDeflector : MonoBehaviour
         {
             // Absorber el proyectil
             Destroy(collision.gameObject);
-
+            projectilesText.text = "" + storedProjectiles.ToString();
             // Incrementar el contador de proyectiles absorbidos
             storedProjectiles++;
             //Debug.Log("Se Guardo "+(storedProjectiles));
@@ -36,6 +36,7 @@ public class ProjectileDeflector : MonoBehaviour
 
             // Reducir el contador de proyectiles absorbidos
             storedProjectiles--;
+            projectilesText.text = "" + storedProjectiles.ToString();
         }
     }
       void Update()

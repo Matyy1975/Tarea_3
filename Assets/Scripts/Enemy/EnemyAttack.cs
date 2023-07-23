@@ -26,7 +26,7 @@ public class EnemyAttack : MonoBehaviour
 
         // Calcula la distancia entre el enemigo y el jugador
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        Debug.Log(distanceToPlayer);
+        //Debug.Log(distanceToPlayer);
 
         if (distanceToPlayer <= attackRange)
         {
