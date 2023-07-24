@@ -1173,6 +1173,7 @@ MonoBehaviour:
   meleeObject: {fileID: 0}
   reflectedDamage: 1
   gameOverObject: {fileID: 0}
+  scoreManagerObject: {fileID: 0}
 --- !u!114 &3234355204147866529
 MonoBehaviour:
   m_ObjectHideFlags: 0
