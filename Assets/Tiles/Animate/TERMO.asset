@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: TERMO
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1747811991, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -1936769137, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 1937615823, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -587317488, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 1789091907, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -248555356, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Azul
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -845651224, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 375303210, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -18801437, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -1392923894, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 472649337, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -564682447, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 793101253, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: -1718320543, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 873201138, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 740367871, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  - {fileID: 522966823, guid: 4036a693422a78b4ebb137a6219f8fda, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
