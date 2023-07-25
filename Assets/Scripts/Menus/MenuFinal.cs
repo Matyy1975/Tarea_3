@@ -10,8 +10,14 @@ public class MenuFinal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            // Desactivar al jugador
+            collision.gameObject.SetActive(false);
+
+            // Activar el menú final
             menuUI.SetActive(true);
-            Time.timeScale = 0f;
+
+            // Si quieres pausar el juego completamente, puedes usar Time.timeScale
+            // Time.timeScale = 0f;
         }
     }
 }
