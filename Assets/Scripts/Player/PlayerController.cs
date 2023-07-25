@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     public Image BarradeVida;
     public int maxHealth = 3;
     private int currentHealth;
-    public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
+    //public GameObject meleeObject; // Referencia al objeto con la etiqueta "Melee"
     public int reflectedDamage = 0; // Daño reflejado al enemigo
     public GameObject gameOverObject;
     private ScoreManager scoreManager;
@@ -18,13 +18,13 @@ public class PlayerController : MonoBehaviour
         scoreManager = scoreManagerObject.GetComponent<ScoreManager>();
     }
 
-    public void MeleeAttack()
-    {
-        if (meleeObject != null)
-        {
-            meleeObject.SetActive(true);
-        }
-    }
+    //public void MeleeAttack()
+    //{
+     //   if (meleeObject != null)
+      //  {
+       //     meleeObject.SetActive(true);
+        //}
+   // }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
