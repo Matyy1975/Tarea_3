@@ -302,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   healthSlider: {fileID: 560451943}
+  explosionPrefab: {fileID: 6623531867961432784, guid: 963829750d5601b44803aad82e17c794, type: 3}
 --- !u!50 &1116859693743311801
 Rigidbody2D:
   serializedVersion: 4

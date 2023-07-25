@@ -439,6 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   healthSlider: {fileID: 12317900}
+  explosionPrefab: {fileID: 542411376472135513, guid: bb508b5b1696f0e49b756eb3f62d6bee, type: 3}
 --- !u!61 &713694881
 BoxCollider2D:
   m_ObjectHideFlags: 0
