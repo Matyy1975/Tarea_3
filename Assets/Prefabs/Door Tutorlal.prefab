@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6176649856341602689}
   - component: {fileID: 1228852508043046470}
   - component: {fileID: 1269219711}
+  - component: {fileID: 1269219710}
   m_Layer: 0
   m_Name: Door Tutorlal
   m_TagString: Wall
@@ -131,3 +132,18 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.28125}
       - {x: 0.5, y: 0.15625}
       - {x: 0.46875, y: 0.21875}
+--- !u!114 &1269219710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6176649856341602688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7436b02e610154746a580154dfc716fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  pushForce: 10
+  player: {fileID: 0}

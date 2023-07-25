@@ -16,6 +16,7 @@ public class EnemyShooting : MonoBehaviour
     private GameObject player;
     private EnemyHealth enemyHealth; // Referencia a EnemyHealth para aplicar el daño
     private float shootingTimer; // Temporizador para controlar la frecuencia de disparo
+    private Animator animator; // Referencia al componente Animator del enemigo
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class EnemyShooting : MonoBehaviour
         }
 
         shootingTimer = shootingInterval; // Inicializar el temporizador con el intervalo de disparo
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -109,6 +111,13 @@ public class EnemyShooting : MonoBehaviour
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, Vector3.forward, shootingRange);
+    }
+    public void DestroyEnemyWithAnimation()
+    {
+        // Puedes agregar cualquier lógica de destrucción específica del enemigo aquí.
+
+        // Activar la animación de destrucción
+        animator.SetTrigger("Destroy");
     }
 #endif
 }
