@@ -12,9 +12,5 @@ public class CombatManager : MonoBehaviour
     // Lógica para detectar que un enemigo ha sido destruido
     //...
 
-    public void EnemyDestroyed(EnemyShooting enemy)
-    {
-        // Llama al método para destruir al enemigo con animación
-        enemy.DestroyEnemyWithAnimation();
-    }
+    
 }
