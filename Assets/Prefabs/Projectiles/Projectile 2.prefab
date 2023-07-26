@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6658294455370417555}
   - component: {fileID: 6658294455370417552}
-  - component: {fileID: 6658294455370417645}
   - component: {fileID: 6658294455370417554}
   - component: {fileID: 7661488082414726549}
   - component: {fileID: -4978578654303189675}
@@ -18,6 +17,7 @@ GameObject:
   - component: {fileID: 998945139558006481}
   - component: {fileID: 6613393259975890477}
   - component: {fileID: -2019791222250049436}
+  - component: {fileID: 7960690292245256873}
   m_Layer: 0
   m_Name: Projectile 2
   m_TagString: Projectile 2
@@ -92,32 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6658294455370417645
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6658294455370417558}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2}
-  m_EdgeRadius: 0
 --- !u!50 &6658294455370417554
 Rigidbody2D:
   serializedVersion: 4
@@ -237,3 +211,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 5274666462097100995, guid: 22212fa56c80ab04d927e72bcebdb342, type: 3}
+--- !u!58 &7960690292245256873
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658294455370417558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1

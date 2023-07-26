@@ -579,7 +579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BarradeVida: {fileID: 0}
   maxHealth: 100
-  meleeObject: {fileID: 0}
   reflectedDamage: 1
   gameOverObject: {fileID: 0}
   scoreManagerObject: {fileID: 0}
