@@ -9,6 +9,8 @@ public class PlayerShooter : MonoBehaviour
 
     public ProjectileDeflector deflector; // Referencia al script ProjectileDeflector
 
+    private AudioSource playerAudioSource; // Referencia al AudioSource del jugador
+
     private void Start()
     {
         if (deflector == null)
@@ -19,6 +21,8 @@ public class PlayerShooter : MonoBehaviour
                 Debug.LogError("ProjectileDeflector script not found on the player!");
             }
         }
+
+        playerAudioSource = GetComponent<AudioSource>(); // Obtener el AudioSource del jugador
     }
 
     private void Update()
@@ -50,5 +54,11 @@ public class PlayerShooter : MonoBehaviour
 
         // Aplicar la velocidad en la dirección especificada
         rb.velocity = direction.normalized * projectileSpeed;
+
+        // Reproducir el sonido del proyectil
+        if (playerAudioSource && projectile.GetComponent<AudioSource>())
+        {
+            projectile.GetComponent<AudioSource>().PlayOneShot(playerAudioSource.clip);
+        }
     }
 }

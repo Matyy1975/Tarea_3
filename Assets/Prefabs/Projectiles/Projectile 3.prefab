@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -692373285287272379}
   - component: {fileID: -8760551854935106374}
   - component: {fileID: -6762161145141375657}
-  - component: {fileID: -203391674414405641}
   - component: {fileID: 1266860719}
   - component: {fileID: -1931965686241287958}
   - component: {fileID: -7026528043301870579}
@@ -154,19 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
---- !u!114 &-203391674414405641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6140735541073939896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec24bcc35ef3ed46b03c72674d5c929, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyDelay: 2
 --- !u!95 &1266860719
 Animator:
   serializedVersion: 5
