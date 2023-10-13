@@ -1,39 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    private float currentSpeed;
-
-    private Rigidbody2D rb;
-    private Vector2 movement;
-
-    private void Start()
+	//I recommend 7 for the move speed, and 1.2 for the force damping
+    public Rigidbody2D rb;
+    public float moveSpeed;
+    public Vector2 forceToApply;
+    public Vector2 PlayerInput;
+    public float forceDamping;
+    void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
-        currentSpeed = moveSpeed;
+        PlayerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+    }
+    void FixedUpdate()
+    {
+        Vector2 moveForce = PlayerInput * moveSpeed;
+        moveForce += forceToApply;
+        forceToApply /= forceDamping;
+        if (Mathf.Abs(forceToApply.x) <= 0.01f && Mathf.Abs(forceToApply.y) <= 0.01f)
+        {
+            forceToApply = Vector2.zero;
+        }
+        rb.velocity = moveForce;
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-    }
-
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
-    }
-
-    public void StartSpeedBoost(float boostAmount, float duration)
-    {
-        currentSpeed += boostAmount;
-        StartCoroutine(ResetSpeedBoost(boostAmount, duration));
-    }
-
-    private System.Collections.IEnumerator ResetSpeedBoost(float boostAmount, float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        currentSpeed -= boostAmount;
+        if (collision.collider.CompareTag("Bullet"))
+        {
+            forceToApply += new Vector2(-20, 0);
+            Destroy(collision.gameObject);
+        }
     }
 }

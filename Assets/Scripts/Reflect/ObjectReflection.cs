@@ -6,8 +6,8 @@ public class ObjectReflection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Verifica si la colisión es con un objeto que tenga las etiquetas "Projectile", "Projectile 2", "Projectile 3" o "Training Projectile"
-        if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("Projectile 2") || collision.gameObject.CompareTag("Projectile 3") || collision.gameObject.CompareTag("Training Projectile"))
+        // Verifica si la colisión es con un objeto que tenga las etiquetas "Projectile"
+        if (collision.gameObject.CompareTag("Projectile"))
         {
             // Obtiene la posición del mouse en el mundo
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -25,11 +25,7 @@ public class ObjectReflection : MonoBehaviour
             // Invierte la escala del objeto en colisión en el eje Y para reflejarlo verticalmente
             collision.gameObject.transform.localScale = new Vector3(collision.gameObject.transform.localScale.x, collision.gameObject.transform.localScale.y * -1, collision.gameObject.transform.localScale.z);
 
-            // Desactiva el componente Missile si está presente en el objeto en colisión
-            if (collision.GetComponent<Missile>() != null)
-            {
-                collision.GetComponent<Missile>().enabled = false;
-            }
+            
         }
     }
 }
